@@ -1,3 +1,5 @@
+import requests
+
 r = requests.post('http://52.233.158.172/change/api/hr/account/register', data = {
   "Teamname": "Lucrehulk",
   "Password": "tosipjomic",
@@ -20,3 +22,5 @@ r = requests.post('http://52.233.158.172/change/api/hr/account/register', data =
     }
     ]
 }, headers = {'content-type': 'application/json'})
+
+r.text
